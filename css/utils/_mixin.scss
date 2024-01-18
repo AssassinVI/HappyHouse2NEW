@@ -1,0 +1,50 @@
+@mixin enTitle() {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4vw;
+}
+
+@mixin zhTitle() {
+    font-family: 'Noto Serif TC';
+    font-weight: 700;
+    color: #40210f;
+    font-size: 1.8vw;
+}
+
+@mixin zhContent() {
+    letter-spacing: 0.1em;
+    font-size: 0.9vw;
+    font-family: '微軟正黑體';
+    color: #331e0a;
+    line-height: 1.8vw;
+}
+
+@mixin hint() {
+    position: absolute;
+    z-index: 99;
+    color: white;
+    bottom: 0.5vw;
+    font-size: 16px;
+    right: 1.5vw;
+    text-shadow: rgb(37, 37, 37) 1px 0 10px;
+}
+
+@mixin square() {
+    padding: 0.3vw 0.6vw 0.3vw 0.7vw;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    font-family: "Noto Sans TC", sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+@mixin formContent() {
+    letter-spacing: 0.1em;
+    font-size: 0.9vw;
+    font-family: '微軟正黑體';
+    color: #331e0a;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 80%);
+    margin-bottom: 1vw;
+    padding: 0.8vw 1vw;
+    display: flex;
+}

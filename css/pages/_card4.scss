@@ -1,0 +1,74 @@
+.card4 {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: 7vw 7.5vw 2vw 7.5vw;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+
+        .top-flower {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            margin-bottom: 1.5vw;
+
+            img {
+                width: 50%;
+                display: block;
+            }
+        }
+
+        .text-box {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .title-box {
+                display: flex;
+                flex-direction: row-reverse;
+
+                .en-title {
+                    @include enTitle();
+                    color: #aa6a2b;
+                    writing-mode: vertical-rl;
+
+                    &:after {
+                        display: inline-block;
+                        content: "";
+                        border: 1px solid #40210f;
+                        height: 5vw;
+
+                        transform: translateY(0.7rem);
+                    }
+                }
+
+                .zh-title {
+                    @include zhTitle();
+                    writing-mode: vertical-rl;
+                    border-left: 2px solid #40210f;
+                    padding-left: 0.8vw;
+                }
+            }
+
+            .content-text-box {
+                @include zhContent();
+                writing-mode: vertical-rl;
+                height: 22vw;
+                text-orientation: upright;
+                margin-right: 3.5vw;
+
+            }
+        }
+
+    }
+
+    .right {
+        text-align: right;
+        align-self: center;
+
+        img {
+            width: 87%;
+        }
+    }
+}

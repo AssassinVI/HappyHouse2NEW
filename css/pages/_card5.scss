@@ -1,0 +1,68 @@
+.card5 {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-left: 8vw;
+    padding-top: 3vw;
+
+    .banner-box {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        overflow: hidden;
+
+        .swiper2 {
+            position: relative;
+            width: 100%;
+            display: flex;
+
+            .swiper-slide {
+                overflow: hidden;
+            }
+
+            .hint {
+                @include hint();
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .swiper-pagination-bullet {
+                background: rgb(255, 255, 255, 50%);
+                opacity: 1
+            }
+
+            .swiper-pagination-bullet-active {
+                background: white;
+            }
+
+
+            // .prev2 {
+            //     position: absolute;
+            //     top: 13vw;
+            //     left: 21vw;
+            //     z-index: 999;
+            //     cursor: pointer;
+
+            //     img {
+            //         width: 100%;
+            //     }
+            // }
+
+            // .next2 {
+            //     position: absolute;
+            //     top: 13vw;
+            //     right: 21vw;
+            //     z-index: 999;
+            //     cursor: pointer;
+
+            //     img {
+            //         width: 100%;
+            //     }
+            // }
+        }
+    }
+}

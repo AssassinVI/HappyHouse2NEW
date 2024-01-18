@@ -1,0 +1,227 @@
+.card1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    .container {
+
+        position: relative;
+
+        .left-top-flower1 {
+            position: absolute;
+            top: -14vw;
+            left: 2vw;
+            z-index: 2;
+            width: 30%;
+        }
+
+        .left-top-flower2 {
+            position: absolute;
+            top: -10vw;
+            left: -6vw;
+            z-index: 1;
+            width: 19%;
+        }
+
+        .left-bottom-grass {
+            position: absolute;
+            bottom: -0.5vw;
+            left: 0px;
+            z-index: 1;
+            width: 26%;
+        }
+
+        .right-bottom-flower1 {
+            position: absolute;
+            bottom: -1vw;
+            right: 0px;
+            z-index: 2;
+            display: flex;
+            justify-content: right;
+            width: 11%;
+        }
+
+        .right-bottom-flower2 {
+            position: absolute;
+            bottom: -2vw;
+            right: 4vw;
+            z-index: 1;
+            display: flex;
+            justify-content: right;
+            width: 30%;
+        }
+
+        .right-bottom-flower3 {
+            position: absolute;
+            bottom: -1.5vw;
+            right: 3vw;
+            z-index: 3;
+            display: flex;
+            justify-content: right;
+            width: 32%;
+        }
+
+        .left-bird-box{
+            .left-bird {
+                position: absolute;
+                left: 3vw;
+                bottom: 5vw;
+                z-index: 4;
+                width: 8%;
+    
+                @media all and (max-width:1440px) {
+                    left: 1vw;
+                    bottom: 3vw;
+                    width: 10%;
+                }
+            }
+
+            #bird_run_svg{
+                position: absolute;
+                left: -4vw;
+                top: 35vw;
+                width: 13vw;
+                z-index: 100;
+            }
+    
+        }
+
+        
+        .top-bird {
+            position: absolute;
+            right: 31vw;
+            top: 7vw;
+            z-index: 4;
+            width: 10%;
+
+            @media all and (max-width:1440px) {
+                top: 10vw;
+                right: 29vw;
+                width: 14%;
+            }
+
+            @media all and (max-width:1366px) {
+                width: 11%;
+            }
+        }
+
+        .center-box {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .logo-box {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                img {
+
+                    width: 25%;
+                }
+            }
+
+            .slogan {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
+                margin-top: 2vw;
+
+                .text-box {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    .text1 {
+                        display: flex;
+                        justify-content: center;
+                        color: #205940;
+                        font-size: 2vw;
+                        font-family: 'Noto Serif TC';
+                        font-weight: 700;
+                        padding: 0.5vw 0vw;
+                        border-bottom: 2px solid #40210f;
+                    }
+
+                    .text2 {
+                        display: flex;
+                        justify-content: center;
+                        color: #6b3307;
+                        font-size: 1.73vw;
+                        font-family: 'Noto Serif TC';
+                        font-weight: 700;
+                        padding: 0.5vw 0vw;
+                        border-bottom: 2px solid #40210f;
+                    }
+                }
+
+            }
+
+            .company-box {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 3vw;
+
+                .company-text {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 17%;
+
+                    @media all and (max-width:1680px) {
+                        width: 100%;
+                        justify-content: center;
+                    }
+
+                    .square {
+                        display: flex;
+
+                        .text-box {
+                            background-color: #ffe175;
+                            padding: 0.4vw 0.8vw;
+                            border-radius: 0.5vw;
+                            color: #205940;
+                            font-family: 'Noto Sans TC', sans-serif;
+                            font-weight: 700;
+                            font-size: 1vw;
+
+                        }
+                    }
+
+                    .company {
+                        align-self: center;
+
+                        @media all and (max-width:1920px) {
+                            display: flex;
+                            justify-content: right;
+                            align-self: right;
+                        }
+
+                        @media all and (max-width:1680px) {
+                            width: 12%;
+                        }
+
+                        img {
+                            width: 100%;
+
+                            @media all and (max-width:1920px) {
+                                width: 85%;
+                            }
+
+                            @media all and (max-width:1680px) {
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

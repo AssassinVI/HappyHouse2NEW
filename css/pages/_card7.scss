@@ -1,0 +1,152 @@
+.card7 {
+    width: 100%;
+    background-image: url(/images/c7_bg_1.webp);
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    padding: 3vw 8vw 0vw 8vw;
+    overflow: hidden;
+
+    .c7-contanier {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+
+        .banner-box4 {
+            display: flex;
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .hint {
+                @include hint();
+            }
+        }
+
+        .banner-box5 {
+            display: flex;
+            justify-content: right;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 2vw;
+
+            .swiper5 {
+                position: relative;
+                width: 100%;
+                display: flex;
+
+                .swiper-slide {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+
+                .hint {
+                    @include hint();
+                }
+
+                .swiper-slide img {
+
+                    height: 44vw;
+
+                }
+
+            }
+        }
+
+        .banner-box5-controller {
+            margin-top: 0.5vw;
+            display: flex;
+            width: 100%;
+            justify-content: right;
+
+            .prev5 {
+                z-index: 999;
+                margin-right: 0.8vw;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .next5 {
+                z-index: 999;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .banner-box6 {
+            display: flex;
+            justify-content: right;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            position: relative;
+
+            .swiper6 {
+                position: relative;
+                width: 100%;
+
+                .swiper-slide {
+                    width: 100%;
+                    overflow: hidden;
+                    display: flex;
+
+                    .hint {
+                        @include hint();
+                    }
+
+                }
+
+                .swiper-slide img {
+                    width: 100%;
+                }
+
+                .swiper-pagination-bullet {
+                    background: rgb(255, 255, 255, 50%);
+                    opacity: 1
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: white;
+                }
+
+                .prev6 {
+                    position: absolute;
+                    top: 13vw;
+                    left: 22vw;
+                    z-index: 999;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .next6 {
+                    position: absolute;
+                    top: 13vw;
+                    right: 22vw;
+                    z-index: 999;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+
+}

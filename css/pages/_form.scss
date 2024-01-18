@@ -1,0 +1,380 @@
+.c8-form {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-image: url(/images/form_bg_1.webp);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+
+    .top-bird {
+        position: absolute;
+        right: 24vw;
+        top: 4vw;
+        width: 10%;
+    }
+
+    .left-flower {
+        position: absolute;
+        left: -3vw;
+        bottom: 5vw;
+        width: 22%;
+    }
+
+    .lefe-bird-box{
+        #bird_run_svg{
+            position: absolute;
+            left: -8vw;
+            top: 41vw;
+            width: 23vw;
+            z-index: 100;
+        }
+        .left-bird {
+            position: absolute;
+            left: 8vw;
+            bottom: 20vw;
+            width: 10%;
+        }
+    }
+    
+
+    .right-flower {
+        position: absolute;
+        right: -6vw;
+        bottom: -5vw;
+        width: 40%;
+        z-index: 0;
+    }
+
+    .top-title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-top: 8vw;
+        position: relative;
+
+        .title {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+
+            .left {
+                display: block;
+                width: 38%;
+
+                img {
+                    margin-left: 5vw;
+                    width: 90%;
+                }
+            }
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                justify-content: center;
+
+                .logo {
+                    width: 100%;
+                    justify-content: center;
+                    display: flex;
+                    margin-bottom: 1vw;
+
+                    img {
+                        width: 55%;
+                    }
+                }
+
+                .title-text1 {
+
+                    font-size: 2vw;
+                    font-family: 'Noto Serif TC';
+                    font-weight: 700;
+                    width: 100%;
+                    justify-content: center;
+                    display: flex;
+                    color: #40210f;
+                }
+
+                .title-text2 {
+                    display: flex;
+
+                    font-size: 1.4vw;
+                    font-family: 'Noto Serif TC';
+                    font-weight: 700;
+                    color: #ce4805;
+                    justify-content: center;
+                    display: flex;
+                    margin-top: 0.5vw;
+
+                    .text1 {
+
+                        &:before {
+                            display: inline-block;
+                            content: "";
+                            border: 2px solid #ce4805;
+                            height: 1.5vw;
+                            transform: translateY(0.5rem);
+                            margin-right: 0.7vw;
+                        }
+
+                        &:after {
+                            display: inline-block;
+                            content: "";
+                            border: 2px solid #ce4805;
+                            height: 1.5vw;
+                            margin-left: 0.7vw;
+                            margin-right: 0.7vw;
+                            transform: translateY(0.5rem);
+                        }
+                    }
+
+                    .text2 {
+
+                        &:after {
+                            display: inline-block;
+                            content: "";
+                            border: 2px solid #ce4805;
+                            height: 1.5vw;
+                            margin-left: 0.7vw;
+                            margin-right: 0.7vw;
+                            transform: translateY(0.5rem);
+                        }
+                    }
+
+
+                    .text3 {
+                        text-align: center;
+
+
+                        &:after {
+                            display: inline-block;
+                            content: "";
+                            border: 2px solid #ce4805;
+                            height: 1.5vw;
+                            margin-left: 0.7vw;
+                            transform: translateY(0.5rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sub-title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        margin-top: 2vw;
+
+        .center-phone-box {
+            display: flex;
+            justify-content: center;
+
+            .square {
+                border: 1px solid #40210f;
+                color: #40210f;
+                @include square();
+            }
+
+            .center-phone {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                color: #40210f;
+                font-size: 1vw;
+                font-family: 'Noto Serif TC';
+                font-weight: 700;
+                font-size: 1.2vw;
+                margin-left: 1vw;
+            }
+        }
+
+        .address-center-box {
+            display: flex;
+            justify-content: center;
+            margin-left: 3vw;
+
+            .square {
+                border: 1px solid #40210f;
+                color: #40210f;
+                @include square();
+            }
+
+            .address-center {
+                margin-left: 1vw;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                color: #40210f;
+                font-weight: 700;
+                font-size: 1.2vw;
+                text-align: center;
+                font-family: 'Noto Serif TC';
+            }
+        }
+    }
+
+    .form-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vw;
+        margin-top: 7vw;
+        z-index: 2;
+
+        .form-title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .title {
+                font-family: 'Noto Serif TC';
+                font-weight: 700;
+                font-size: 1.5vw;
+            }
+
+            .title-img-left {
+                text-align: left;
+
+                img {
+                    width: 70%;
+                }
+            }
+
+            .title-img-right {
+                text-align: right;
+
+                img {
+                    width: 70%;
+                }
+            }
+        }
+
+        .main-form-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2vw;
+
+            .main-form {
+                width: 40%;
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column;
+
+                input, textarea{
+                    outline: none;
+                    font-size: 0.9vw;
+                }
+
+                .name-box {
+                    @include formContent();
+                    display: flex;
+
+                    .name-title {
+                        span {
+                            color: #ff0000;
+                        }
+                    }
+
+                    input {
+                        width: 60%;
+                        border: none;
+                        background: none;
+                    }
+                }
+
+                .email-box {
+                    @include formContent();
+
+                    .email-title {
+                        span {
+                            color: #ff0000;
+                        }
+                    }
+
+                    input {
+                        width: 60%;
+                        border: none;
+                        background: none;
+                    }
+                }
+
+                .phone-box {
+                    @include formContent();
+
+                    .phone-title {
+                        span {
+                            color: #ff0000;
+                        }
+                    }
+
+                    input {
+                        width: 60%;
+                        border: none;
+                        background: none;
+                    }
+                }
+
+                .message-box {
+                    @include formContent();
+                    flex-direction: column;
+                    margin-bottom: 0vw;
+
+                    .message-title {
+                        span {
+                            color: #ff0000;
+                        }
+                    }
+
+                    textarea {
+                        margin-top: 0.5vw;
+                        width: 100%;
+                        height: 11vw;
+                        resize: none;
+                        border: none;
+                        background: none;
+                    }
+
+                }
+
+                .check-box {
+                    font-size: 0.9vw;
+                    font-family: '微軟正黑體';
+                    color: #331e0a;
+                    width: 100%;
+                    letter-spacing: 0.1em;
+                    margin: 2vw 0vw;
+
+                    #ca_privacy {
+                        transform: scale(1.5) translateY(-1px);
+                        margin-right: 0.3vw;
+                    }
+                }
+
+                .send-btn-box {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    #sub_btn1 {
+                        background-color: #ce4805;
+                        font-family: '微軟正黑體';
+                        color: white;
+                        letter-spacing: 0.1em;
+                        font-size: 1vw;
+                        border: none;
+                        border-radius: 30px;
+                        padding: 0 25px;
+                        line-height: 55px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
