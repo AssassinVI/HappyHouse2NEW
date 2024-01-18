@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:wght@500&family=Junge&family=Noto+Sans+KR&family=Noto+Sans+TC&family=Playpen+Sans:wght@500&family=Raleway:wght@500&display=swap"
         rel="stylesheet">
@@ -17,7 +16,14 @@
 </head>
 
 <body>
-
+    <div class="first-video-box">
+        <div class="video-box">
+            <button class="video-skip">skip</button>
+            <video class="video" autoplay loop muted playsinline>
+                <source src="images/悅城2-影片.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
     <div class="card1">
         <div class="container">
 
@@ -33,26 +39,7 @@
 
             <img class="right-bottom-flower3" src="images/right_flower3.png" alt="right_flower3" srcset="">
 
-            <div class="left-bird-box">
-                <img class="left-bird" src="images/left_bird.png" alt="left_bird" srcset="">
-                <svg id="bird_run_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.72 268.67">
-                    <defs>
-                      <style>
-                        .cls-1 {
-                          fill: none;
-                          stroke: #00000000;
-                          stroke-miterlimit: 10;
-                        }
-                      </style>
-                    </defs>
-                    <g id="txt">
-                      <g>
-                        <path id="run1" class="cls-1" d="M194.39,103.55c-3.26-10.88-8.9-22.35-19.22-26.37-30.36-11.83-79.95,49.07-105.31,80.21C49.43,182.49,23.54,219.07,.45,268.46"/>
-                        <path id="run2" class="cls-1" d="M215.28,102.8C175.95,34.34,117.9-6.78,66.37,1.57c-9.85,1.6-21.82,5.38-34.84,13.94"/>
-                      </g>
-                    </g>
-                </svg>
-            </div>
+            <img class="left-bird" src="images/left_bird.png" alt="left_bird" srcset="">
 
             <img class="top-bird" src="images/top_bird.png" alt="top_bird" srcset="">
 
@@ -85,10 +72,43 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
     <!-- 空拍圖 -->
-    <!-- <div class="card2"></div> -->
+    <div class="card2">
+        <div class="map">
+            <img src="images/空拍圖.webp" alt="空拍圖" srcset="">
+
+        </div>
+        <div class="arrow-container">
+            <div class="arrow-left-line">
+                <img src="images/左線.svg" alt="左線" />
+            </div>
+            <div class="arrow-left">
+                <img src="images/左箭頭.svg" alt="左箭頭" />
+                <img src="images/左箭頭.svg" alt="左箭頭" />
+                <img src="images/左箭頭.svg" alt="左箭頭" />
+                <img src="images/左箭頭.svg" alt="左箭頭" />
+            </div>
+            <div class="arrow-finger">
+                <img src="images/手指.svg" alt="手指" />
+                <div class="arrow-finger-circle"></div>
+                <div class="arrow-finger-circle"></div>
+                <div class="arrow-finger-circle"></div>
+            </div>
+            <div class="arrow-right">
+                <img src="images/右箭頭.svg" alt="右箭頭" />
+                <img src="images/右箭頭.svg" alt="右箭頭" />
+                <img src="images/右箭頭.svg" alt="右箭頭" />
+                <img src="images/右箭頭.svg" alt="右箭頭" />
+            </div>
+            <div class="arrow-right-line">
+                <img src="images/右線.svg" alt="右線" />
+            </div>
+        </div>
+    </div>
 
     <div class="card3">
         <div class="top-bird">
@@ -217,10 +237,7 @@
             </div>
         </div>
         <div class="right">
-            <a href="images/c4_img.webp" data-fancybox>
-                <img src="images/c4_img.webp" alt="c4_img" srcset="">
-            </a>
-            
+            <img src="images/c4_img.webp" alt="c4_img" srcset="">
         </div>
     </div>
 
@@ -304,6 +321,9 @@
         <div class="leaf-5">
             <img src="images/c6_leaf_1.png" alt="c6_leaf_1" srcset="">
         </div>
+        <div class="leaf-5">
+            <img src="images/c6_leaf_1.png" alt="c6_leaf_1" srcset="">
+        </div>
 
         <div class="leaf-6">
             <img src="images/c6_leaf_6.png" alt="c6_leaf_6" srcset="">
@@ -326,10 +346,10 @@
                                 <img src="/images/c6_banner.webp" alt="c6_banner" />
                                 <div class="hint">實景示意圖</div>
                             </div>
-                            <!-- <div class="swiper-slide banner2">
+                            <div class="swiper-slide banner2">
                                 <img src="/images/c6_banner.webp" alt="c6_banner" />
                                 <div class="hint">實景示意圖</div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                     <div class="slider-controller">
@@ -411,20 +431,21 @@
                 <div class="swiper5 card7-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/images/c7_banner2_1.webp" alt="c7_banner2_1" />
+                            <img src="/images/c7_banner2.webp" alt="c7_banner2" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/images/c7_banner2_2.webp" alt="c7_banner2_2" />
+                            <img src="/images/c7_banner2.webp" alt="c7_banner2" />
                         </div>
-                        <div class="swiper-slide">
-                            <img src="/images/c7_banner2_3.webp" alt="c7_banner2_3" />
+
+                    </div>
+
+                    <div class="banner-box5-controller-moblie">
+                        <div class="slider-arrow prev5">
+                            <img src="images/prev.png" alt="prev" srcset="">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="/images/c7_banner2_4.webp" alt="c7_banner2_4" />
+                        <div class="slider-arrow next5">
+                            <img src="images/next.png" alt="next" srcset="">
                         </div>
-                        <!-- <div class="swiper-slide">
-                            <img src="/images/c7_banner2_1.webp" alt="c7_banner2_1" />
-                        </div> -->
                     </div>
                 </div>
 
@@ -481,39 +502,6 @@
 
     <div class="c8-form">
 
-        <img class="top-bird" src="images/form_bird.png" alt="form_bird" srcset="">
-
-
-
-        <img class="left-flower" src="images/form_flower2.png" alt="form_flower2" srcset="">
-
-
-
-        <div class="lefe-bird-box">
-            <img class="left-bird" src="images/form_bird2.png" alt="form_bird2" srcset="">
-            <svg id="bird_run_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.72 268.67">
-                <defs>
-                  <style>
-                    .cls-1 {
-                      fill: none;
-                      stroke: #00000000;
-                      stroke-miterlimit: 10;
-                    }
-                  </style>
-                </defs>
-                <g id="txt">
-                  <g>
-                    <path id="run1" class="cls-1" d="M194.39,103.55c-3.26-10.88-8.9-22.35-19.22-26.37-30.36-11.83-79.95,49.07-105.31,80.21C49.43,182.49,23.54,219.07,.45,268.46"/>
-                    <path id="run2" class="cls-1" d="M215.28,102.8C175.95,34.34,117.9-6.78,66.37,1.57c-9.85,1.6-21.82,5.38-34.84,13.94"/>
-                  </g>
-                </g>
-            </svg>
-        </div>
-        
-
-
-        <img class="right-flower" src="images/form_flower3.png" alt="form_flower3" srcset="">
-
 
 
         <div class="top-title">
@@ -553,6 +541,9 @@
                 </div>
             </div>
         </div>
+
+        <img class="moblie-flower" src="/images/form_flower1.png" alt="form_flower1" srcset="">
+
         <div class="form-box">
             <div class="form-title">
                 <div class="title-img-left">
@@ -600,20 +591,26 @@
                         <textarea name='text' spellcheck="true" id="wider" rows="5"></textarea>
                     </div>
 
-                    <div class="pribacyCheck_div check-box">
-                        <label>
-                            <input type="checkbox" id="ca_privacy"> 本人知悉並同意『<a target="_blank" href="privacy.html">個資告知事項聲明</a>』內容
-                        </label>
+                    <div class="check-box">
+                        <input type="checkbox" id="checkbox" name="checkbox">
+
+                        <label for="checkbox">本人知悉並同意『個資告知事項聲明』內容</label>
                     </div>
 
                     <div class="send-btn-box">
-                        <button id="sub_btn1">發送訊息</button>
+                        <button id="send-btn">發送訊息</button>
                     </div>
                 </div>
             </div>
         </div>
 
+        <img class="top-bird" src="images/form_bird.png" alt="form_bird" srcset="">
 
+        <img class="left-flower" src="images/form_flower2.png" alt="form_flower2" srcset="">
+
+        <img class="left-bird" src="images/form_bird2.png" alt="form_bird2" srcset="">
+
+        <img class="right-flower" src="images/form_flower3.png" alt="form_flower3" srcset="">
     </div>
     </div>
 
@@ -627,7 +624,6 @@
     <script src="minified/CSSRulePlugin.min.js"></script>
     <script src="minified/ScrollTrigger.min.js"></script>
     <script src="minified/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/index.js"></script>
 
 </body>

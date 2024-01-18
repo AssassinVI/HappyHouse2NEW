@@ -5,6 +5,11 @@
     padding-left: 8vw;
     padding-top: 3vw;
 
+    @media all and (max-width:1024px) {
+        padding: 4vw;
+        padding-top: 0vw;
+    }
+
     .banner-box {
         display: flex;
         justify-content: right;
@@ -40,29 +45,57 @@
             }
 
 
-            // .prev2 {
-            //     position: absolute;
-            //     top: 13vw;
-            //     left: 21vw;
-            //     z-index: 999;
-            //     cursor: pointer;
+            .prev2 {
+                display: none;
 
-            //     img {
-            //         width: 100%;
-            //     }
-            // }
+                @media all and (max-width:1024px) {
+                    display: block;
+                    position: absolute;
+                    top: 28vw;
+                    left: 3vw;
+                    z-index: 999;
+                    cursor: pointer;
+                }
 
-            // .next2 {
-            //     position: absolute;
-            //     top: 13vw;
-            //     right: 21vw;
-            //     z-index: 999;
-            //     cursor: pointer;
+                @media all and (max-width:500px) {
+                    left: 2vw;
+                }
 
-            //     img {
-            //         width: 100%;
-            //     }
-            // }
+                img {
+                    width: 100%;
+
+                    @media all and (max-width:500px) {
+                        width: 70%;
+                    }
+                }
+            }
+
+            .next2 {
+
+                display: none;
+
+                @media all and (max-width:1024px) {
+                    display: block;
+                    position: absolute;
+                    top: 28vw;
+                    right: 3vw;
+                    z-index: 999;
+                    cursor: pointer;
+                    text-align: right;
+                }
+
+                @media all and (max-width:500px) {
+                    right: 2vw;
+                }
+
+                img {
+                    width: 100%;
+
+                    @media all and (max-width:500px) {
+                        width: 70%;
+                    }
+                }
+            }
         }
     }
 }

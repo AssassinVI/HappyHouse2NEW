@@ -1,0 +1,33 @@
+.card2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin: 0 auto;
+    position: relative;
+    .map {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+
+        @media all and (max-width:1024px) {
+            width: 100%;
+            position: relative;
+            overflow-x: scroll;
+            padding-top: 0vw;
+        }
+
+        img {
+            width: 85%;
+            // margin: 0 auto;
+
+            @media all and (max-width:1024px) {
+                width: auto;
+                height: 80vh;
+                max-width: unset !important;
+            }
+        }
+    }
+
+}

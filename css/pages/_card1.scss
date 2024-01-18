@@ -6,24 +6,41 @@
     overflow: hidden;
     position: relative;
 
+    @media all and (max-width:1024px) {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
     .container {
 
         position: relative;
 
         .left-top-flower1 {
             position: absolute;
-            top: -14vw;
-            left: 2vw;
+            top: -13vw;
+            left: -2vw;
             z-index: 2;
-            width: 30%;
+            width: 25%;
+
+            @media all and (max-width:1024px) {
+                top: -22vw;
+                left: -2vw;
+                width: 45%;
+            }
         }
 
         .left-top-flower2 {
             position: absolute;
-            top: -10vw;
-            left: -6vw;
+            top: -9vw;
+            left: -5vw;
             z-index: 1;
-            width: 19%;
+            width: 17%;
+
+            @media all and (max-width:1024px) {
+                top: -17vw;
+                left: -10vw;
+                width: 33%;
+            }
+
         }
 
         .left-bottom-grass {
@@ -32,6 +49,16 @@
             left: 0px;
             z-index: 1;
             width: 26%;
+
+            @media all and (max-width:1024px) {
+                width: 45%;
+            }
+
+            @media all and (max-width:500px) {
+                width: 45%;
+                bottom: 0vw;
+
+            }
         }
 
         .right-bottom-flower1 {
@@ -41,55 +68,79 @@
             z-index: 2;
             display: flex;
             justify-content: right;
-            width: 11%;
+            width: 10%;
+
+            @media all and (max-width:1024px) {
+                width: 14%;
+                bottom: -1vw;
+                right: 0px;
+            }
+
+            @media all and (max-width:500px) {
+                bottom: 0vw;
+            }
         }
 
         .right-bottom-flower2 {
             position: absolute;
-            bottom: -2vw;
-            right: 4vw;
+            bottom: -1vw;
+            right: 3vw;
             z-index: 1;
             display: flex;
             justify-content: right;
-            width: 30%;
+            width: 25%;
+
+            @media all and (max-width:1024px) {
+                width: 39%;
+                bottom: -1vw;
+                right: 3vw;
+            }
+
+            @media all and (max-width:500px) {
+                bottom: 0vw;
+            }
         }
 
         .right-bottom-flower3 {
             position: absolute;
-            bottom: -1.5vw;
+            bottom: -1vw;
             right: 3vw;
             z-index: 3;
             display: flex;
             justify-content: right;
-            width: 32%;
-        }
+            width: 25%;
 
-        .left-bird-box{
-            .left-bird {
-                position: absolute;
-                left: 3vw;
-                bottom: 5vw;
-                z-index: 4;
-                width: 8%;
-    
-                @media all and (max-width:1440px) {
-                    left: 1vw;
-                    bottom: 3vw;
-                    width: 10%;
-                }
+            @media all and (max-width:1024px) {
+                width: 34%;
+                bottom: 3vw;
+                right: 7vw;
             }
 
-            #bird_run_svg{
-                position: absolute;
-                left: -4vw;
-                top: 35vw;
-                width: 13vw;
-                z-index: 100;
+            @media all and (max-width:500px) {
+                bottom: 0vw;
+                width: 40%;
             }
-    
         }
 
-        
+        .left-bird {
+            position: absolute;
+            left: 3vw;
+            bottom: 5vw;
+            z-index: 4;
+            width: 8%;
+
+            @media all and (max-width:1440px) {
+                left: 1vw;
+                bottom: 3vw;
+                width: 10%;
+            }
+
+            @media all and (max-width:1024px) {
+                bottom: 7vw;
+                width: 15%;
+            }
+        }
+
         .top-bird {
             position: absolute;
             right: 31vw;
@@ -106,6 +157,18 @@
             @media all and (max-width:1366px) {
                 width: 11%;
             }
+
+            @media all and (max-width:1024px) {
+                width: 23%;
+                top: 23vw;
+                right: 19vw;
+            }
+
+            @media all and (max-width:500px) {
+                width: 30%;
+                top: 27vw;
+                right: 21vw;
+            }
         }
 
         .center-box {
@@ -115,14 +178,21 @@
             justify-content: center;
             flex-direction: column;
 
+            @media all and (max-width:1024px) {
+                height: calc(var(--vh, 1vh) * 100);
+            }
+
             .logo-box {
                 display: flex;
                 justify-content: center;
                 width: 100%;
 
                 img {
-
                     width: 25%;
+
+                    @media all and (max-width:1024px) {
+                        width: 56%;
+                    }
                 }
             }
 
@@ -132,6 +202,10 @@
                 width: 100%;
                 flex-direction: column;
                 margin-top: 2vw;
+
+                @media all and (max-width:1024px) {
+                    margin-top: 5vw;
+                }
 
                 .text-box {
                     width: 100%;
@@ -147,6 +221,20 @@
                         font-weight: 700;
                         padding: 0.5vw 0vw;
                         border-bottom: 2px solid #40210f;
+
+                        @media all and (max-width:1024px) {
+                            font-size: 5.7vw;
+                        }
+
+                        @media all and (max-width:500px) {
+                            border-bottom: 1px solid #40210f;
+                            // letter-spacing: 0.05em;
+                        }
+
+                        @media all and (max-width:390px) {
+                            // border-bottom: 1px solid #40210f;
+                            letter-spacing: 0.05em;
+                        }
                     }
 
                     .text2 {
@@ -158,6 +246,15 @@
                         font-weight: 700;
                         padding: 0.5vw 0vw;
                         border-bottom: 2px solid #40210f;
+
+                        @media all and (max-width:1024px) {
+                            font-size: 5vw;
+                        }
+
+                        @media all and (max-width:500px) {
+                            border-bottom: 1px solid #40210f;
+                            // letter-spacing: 0.1em;
+                        }
                     }
                 }
 
@@ -191,6 +288,11 @@
                             font-weight: 700;
                             font-size: 1vw;
 
+                            @media all and (max-width:1024px) {
+                                padding: 1vw 2vw;
+                                border-radius: 1.2vw;
+                                font-size: 3vw;
+                            }
                         }
                     }
 
@@ -207,6 +309,11 @@
                             width: 12%;
                         }
 
+                        @media all and (max-width:1024px) {
+                            margin-left: 5vw;
+                            width: 31%;
+                        }
+
                         img {
                             width: 100%;
 
@@ -216,6 +323,10 @@
 
                             @media all and (max-width:1680px) {
                                 width: 80%;
+                            }
+
+                            @media all and (max-width:1024px) {
+                                width: 100%;
                             }
                         }
                     }

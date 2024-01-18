@@ -1,6 +1,10 @@
 @mixin enTitle() {
     font-family: 'Cinzel', serif;
     font-size: 1.4vw;
+
+    @media all and (max-width:1024px) {
+        font-size: 4.5vw;
+    }
 }
 
 @mixin zhTitle() {
@@ -8,6 +12,11 @@
     font-weight: 700;
     color: #40210f;
     font-size: 1.8vw;
+
+    @media all and (max-width:1024px) {
+        font-size: 45pt;
+        font-size: 5.7vw;
+    }
 }
 
 @mixin zhContent() {
@@ -16,6 +25,11 @@
     font-family: '微軟正黑體';
     color: #331e0a;
     line-height: 1.8vw;
+
+    @media all and (max-width:1024px) {
+        font-size: 3.4vw;
+        line-height: 5.5vw;
+    }
 }
 
 @mixin hint() {
@@ -26,6 +40,15 @@
     font-size: 16px;
     right: 1.5vw;
     text-shadow: rgb(37, 37, 37) 1px 0 10px;
+
+    @media all and (max-width:1024px) {
+        bottom: 1.5vw;
+        right: 3vw;
+    }
+
+    @media all and (max-width:500px) {
+        font-size: 10px;
+    }
 }
 
 @mixin square() {
@@ -35,6 +58,12 @@
     font-family: "Noto Sans TC", sans-serif;
     letter-spacing: 0.1em;
     text-align: center;
+
+    @media all and (max-width:1024px) {
+        font-size: 2.3vw;
+        padding: 0.5vw 1vw 0.5vw 1.3vw;
+        border-radius: 1.5vw;
+    }
 }
 
 @mixin formContent() {
@@ -47,4 +76,19 @@
     margin-bottom: 1vw;
     padding: 0.8vw 1vw;
     display: flex;
+
+    @media all and (max-width:1024px) {
+        font-size: 3vw;
+        padding: 2.5vw 3vw;
+    }
+}
+
+@mixin formInput() {
+    width: 60%;
+    border: none;
+    background: none;
+
+    @media all and (max-width:1024px) {
+        width: 75%;
+    }
 }

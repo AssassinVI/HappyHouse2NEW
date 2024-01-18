@@ -8,11 +8,18 @@
     background-position: bottom;
     overflow: hidden;
 
+
     .top-bird {
         position: absolute;
         right: 24vw;
         top: 4vw;
         width: 10%;
+
+        @media all and (max-width:1024px) {
+            width: 20%;
+            right: 23vw;
+            top: 6vw;
+        }
     }
 
     .left-flower {
@@ -20,24 +27,26 @@
         left: -3vw;
         bottom: 5vw;
         width: 22%;
+
+        @media all and (max-width:1024px) {
+            position: relative;
+            width: 33%;
+            left: -5vw;
+        }
     }
 
-    .lefe-bird-box{
-        #bird_run_svg{
-            position: absolute;
-            left: -8vw;
-            top: 41vw;
-            width: 23vw;
-            z-index: 100;
-        }
-        .left-bird {
-            position: absolute;
-            left: 8vw;
-            bottom: 20vw;
-            width: 10%;
+    .left-bird {
+        position: absolute;
+        left: 8vw;
+        bottom: 20vw;
+        width: 10%;
+
+        @media all and (max-width:1024px) {
+            left: 10vw;
+            bottom: 27vw;
+            width: 18%;
         }
     }
-    
 
     .right-flower {
         position: absolute;
@@ -45,6 +54,12 @@
         bottom: -5vw;
         width: 40%;
         z-index: 0;
+
+        @media all and (max-width:1024px) {
+            right: -10vw;
+            bottom: -4vw;
+            width: 53%;
+        }
     }
 
     .top-title {
@@ -54,14 +69,26 @@
         padding-top: 8vw;
         position: relative;
 
+        @media all and (max-width:1024px) {
+            padding-top: 18vw;
+        }
+
         .title {
             display: flex;
             width: 50%;
             justify-content: center;
 
+            @media all and (max-width:1024px) {
+                width: 100%;
+            }
+
             .left {
                 display: block;
                 width: 38%;
+
+                @media all and (max-width:1024px) {
+                    display: none;
+                }
 
                 img {
                     margin-left: 5vw;
@@ -75,6 +102,10 @@
                 width: 70%;
                 justify-content: center;
 
+                @media all and (max-width:1024px) {
+                    width: 100%;
+                }
+
                 .logo {
                     width: 100%;
                     justify-content: center;
@@ -83,6 +114,10 @@
 
                     img {
                         width: 55%;
+
+                        // @media all and (max-width:1024px) {
+                        //     width: 65%;
+                        // }
                     }
                 }
 
@@ -95,11 +130,15 @@
                     justify-content: center;
                     display: flex;
                     color: #40210f;
+
+                    @media all and (max-width:1024px) {
+                        font-size: 5.7vw;
+                        margin-top: 2vw;
+                    }
                 }
 
                 .title-text2 {
                     display: flex;
-
                     font-size: 1.4vw;
                     font-family: 'Noto Serif TC';
                     font-weight: 700;
@@ -108,25 +147,53 @@
                     display: flex;
                     margin-top: 0.5vw;
 
+                    @media all and (max-width:1024px) {
+                        font-size: 4vw;
+                    }
+
                     .text1 {
 
                         &:before {
                             display: inline-block;
                             content: "";
-                            border: 2px solid #ce4805;
+                            border: 2px solid #40210f;
                             height: 1.5vw;
                             transform: translateY(0.5rem);
-                            margin-right: 0.7vw;
+                            margin-right: 1vw;
+
+                            @media all and (max-width:1024px) {
+                                height: 4.5vw;
+                                margin-right: 2vw;
+                                border: 2px solid #40210f;
+                            }
+
+                            @media all and (max-width:500px) {
+                                height: 5vw;
+                                transform: translateY(0.4rem);
+                                border: 1px solid #40210f;
+                            }
                         }
 
                         &:after {
                             display: inline-block;
                             content: "";
-                            border: 2px solid #ce4805;
+                            border: 2px solid #40210f;
                             height: 1.5vw;
-                            margin-left: 0.7vw;
-                            margin-right: 0.7vw;
+                            margin-left: 1vw;
+                            margin-right: 1vw;
                             transform: translateY(0.5rem);
+
+                            @media all and (max-width:1024px) {
+                                height: 4.5vw;
+                                margin-left: 2vw;
+                                margin-right: 2vw;
+                            }
+
+                            @media all and (max-width:500px) {
+                                height: 5vw;
+                                transform: translateY(0.4rem);
+                                border: 1px solid #40210f;
+                            }
                         }
                     }
 
@@ -135,11 +202,23 @@
                         &:after {
                             display: inline-block;
                             content: "";
-                            border: 2px solid #ce4805;
+                            border: 2px solid #40210f;
                             height: 1.5vw;
-                            margin-left: 0.7vw;
-                            margin-right: 0.7vw;
+                            margin-left: 1vw;
+                            margin-right: 1vw;
                             transform: translateY(0.5rem);
+
+                            @media all and (max-width:1024px) {
+                                height: 4.5vw;
+                                margin-left: 2vw;
+                                margin-right: 2vw;
+                            }
+
+                            @media all and (max-width:500px) {
+                                height: 5vw;
+                                transform: translateY(0.4rem);
+                                border: 1px solid #40210f;
+                            }
                         }
                     }
 
@@ -151,10 +230,21 @@
                         &:after {
                             display: inline-block;
                             content: "";
-                            border: 2px solid #ce4805;
+                            border: 2px solid #40210f;
                             height: 1.5vw;
-                            margin-left: 0.7vw;
+                            margin-left: 1vw;
                             transform: translateY(0.5rem);
+
+                            @media all and (max-width:1024px) {
+                                height: 4.5vw;
+                                margin-left: 2vw;
+                            }
+
+                            @media all and (max-width:500px) {
+                                height: 5vw;
+                                transform: translateY(0.4rem);
+                                border: 1px solid #40210f;
+                            }
                         }
                     }
                 }
@@ -169,9 +259,21 @@
         position: relative;
         margin-top: 2vw;
 
+        @media all and (max-width:1024px) {
+            flex-direction: column-reverse;
+            width: 100%;
+            padding-left: 18vw;
+            margin-top: 8vw;
+        }
+
         .center-phone-box {
             display: flex;
             justify-content: center;
+
+            @media all and (max-width:1024px) {
+                justify-content: left;
+                margin-top: 2vw;
+            }
 
             .square {
                 border: 1px solid #40210f;
@@ -189,6 +291,16 @@
                 font-weight: 700;
                 font-size: 1.2vw;
                 margin-left: 1vw;
+
+                a[href^=tel] {
+                    text-decoration: inherit;
+                    color: #331e0a;
+                }
+
+                @media all and (max-width:1024px) {
+                    font-size: 3.6vw;
+
+                }
             }
         }
 
@@ -196,6 +308,11 @@
             display: flex;
             justify-content: center;
             margin-left: 3vw;
+
+            @media all and (max-width:1024px) {
+                justify-content: left;
+                margin-left: 0vw;
+            }
 
             .square {
                 border: 1px solid #40210f;
@@ -213,7 +330,23 @@
                 font-size: 1.2vw;
                 text-align: center;
                 font-family: 'Noto Serif TC';
+
+                @media all and (max-width:1024px) {
+                    font-size: 3.6vw;
+                }
             }
+        }
+    }
+
+    .moblie-flower {
+        display: none;
+
+        @media all and (max-width:1024px) {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            margin: 0 auto;
+
         }
     }
 
@@ -230,25 +363,75 @@
             display: flex;
             justify-content: center;
 
+
+
             .title {
                 font-family: 'Noto Serif TC';
                 font-weight: 700;
                 font-size: 1.5vw;
+
+                @media all and (max-width:1024px) {
+                    font-size: 3.8vw;
+                    color: #40210f;
+                    font-weight: 700;
+                    text-align: center;
+                    font-family: "Noto Serif TC";
+                }
+
+                @media all and (max-width:500px) {
+                    margin-bottom: 3vw;
+                }
             }
 
             .title-img-left {
                 text-align: left;
 
+
+                @media all and (max-width:1024px) {
+                    text-align: right;
+                    margin-right: 2vw;
+
+                }
+
+                @media all and (max-width:500px) {
+                    width: 30%;
+                }
+
                 img {
                     width: 70%;
+
+                    @media all and (max-width:1024px) {
+                        width: 60%;
+                    }
+
+                    @media all and (max-width:500px) {
+                        width: 40%;
+                    }
                 }
             }
 
             .title-img-right {
                 text-align: right;
 
+                @media all and (max-width:1024px) {
+                    text-align: left;
+                    margin-left: 2vw;
+                }
+
+                @media all and (max-width:500px) {
+                    width: 30%;
+                }
+
                 img {
                     width: 70%;
+
+                    @media all and (max-width:1024px) {
+                        width: 60%;
+                    }
+
+                    @media all and (max-width:500px) {
+                        width: 40%;
+                    }
                 }
             }
         }
@@ -266,9 +449,8 @@
                 margin: 0 auto;
                 flex-direction: column;
 
-                input, textarea{
-                    outline: none;
-                    font-size: 0.9vw;
+                @media all and (max-width:1024px) {
+                    width: 90%;
                 }
 
                 .name-box {
@@ -282,9 +464,7 @@
                     }
 
                     input {
-                        width: 60%;
-                        border: none;
-                        background: none;
+                        @include formInput();
                     }
                 }
 
@@ -298,9 +478,7 @@
                     }
 
                     input {
-                        width: 60%;
-                        border: none;
-                        background: none;
+                        @include formInput();
                     }
                 }
 
@@ -313,10 +491,12 @@
                         }
                     }
 
+
+
                     input {
-                        width: 60%;
-                        border: none;
-                        background: none;
+
+                        @include formInput();
+
                     }
                 }
 
@@ -338,6 +518,10 @@
                         resize: none;
                         border: none;
                         background: none;
+
+                        @media all and (max-width:1024px) {
+                            height: 30vw;
+                        }
                     }
 
                 }
@@ -350,9 +534,22 @@
                     letter-spacing: 0.1em;
                     margin: 2vw 0vw;
 
-                    #ca_privacy {
+                    @media all and (max-width:1024px) {
+                        font-size: 3vw;
+                        margin: 5vw 0vw;
+                    }
+
+                    #checkbox {
                         transform: scale(1.5) translateY(-1px);
                         margin-right: 0.3vw;
+
+                        @media all and (max-width:1024px) {
+                            transform: scale(2) translateY(-2px);
+                        }
+
+                        @media all and (max-width:500px) {
+                            transform: scale(1) translateY(2px);
+                        }
                     }
                 }
 
@@ -361,7 +558,7 @@
                     display: flex;
                     justify-content: center;
 
-                    #sub_btn1 {
+                    #send-btn {
                         background-color: #ce4805;
                         font-family: '微軟正黑體';
                         color: white;
@@ -372,6 +569,21 @@
                         padding: 0 25px;
                         line-height: 55px;
                         cursor: pointer;
+                        @media all and (max-width:1024px) {
+                            font-size: 3.2vw;
+                            line-height: 6vw;
+                            padding: 0 2.7vw;
+                            border-radius: 3vw;
+                        }
+
+                        @media all and (max-width:500px) {
+                            font-size: 4vw;
+
+                            padding: 0.5vw 3.5vw;
+                            border-radius: 4vw;
+                            line-height: 7vw;
+
+                        }
                     }
                 }
             }
